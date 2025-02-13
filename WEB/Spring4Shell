@@ -18,21 +18,14 @@
               "propertyValueList": []
             }
           }
+        },
+        "singletonObjects": {
+          "obj": {
+            "@type": "java.net.InetAddress",
+            "hostName": "google.com"
+          }
         }
       }
-    },
-    {
-      "@type": "java.util.HashMap",
-      "@keys": [
-        {
-          "@ref": 1
-        }
-      ],
-      "@items": [
-        {
-          "@ref": 1
-        }
-      ]
     }
   ]
 }

